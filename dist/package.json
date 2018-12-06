@@ -1,0 +1,56 @@
+{
+  "name": "ipz1",
+  "version": "1.0.0",
+  "description": "project for ipz",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --hot",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
+  "proxy": "http://localhost:8080/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://IvanOpalchuk@bitbucket.org/ipz_1_opalchuk/ipz_1_opalchuk.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ipz_1_opalchuk/ipz_1_opalchuk#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-router-dom": "^4.3.1"
+  }
+}
